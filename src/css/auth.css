@@ -1,0 +1,99 @@
+/* Fondo de la página */
+.auth-page {
+    background: url('../images/bg-login.jpg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Fuente aplicada */
+}
+
+/* Caja del formulario */
+.auth-box {
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo en la parte superior */
+.logo-small {
+    height: 50px;
+    margin: 0 auto 20px auto; /* Centra horizontalmente y deja espacio abajo */
+    display: block;
+}
+
+/* Estilos de los tabs */
+.nav-pills {
+    display: flex;
+    justify-content: center; /* Centra los tabs horizontalmente */
+    margin-bottom: 20px;
+}
+
+.nav-pills .nav-item {
+    margin-right: 10px; /* Espacio entre los tabs */
+}
+
+.nav-pills .nav-link {
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif; /* Fuente aplicada a los tabs */
+}
+
+.nav-pills .nav-link.active {
+    background-color: #0d6efd;
+    color: white;
+    box-shadow: 0 4px 6px rgba(13, 110, 253, 0.3);
+}
+
+/* Estilo de los inputs cuando están en foco */
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Alertas de error */
+.alert {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 5px;
+}
+
+/* Botón de acción */
+.btn {
+    margin-top: 5%;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Estilo del formulario */
+form {
+    margin-top: 20px;
+}
+
+/* Elementos de la página de login y registro */
+.auth-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif; /* Fuente aplicada al título */
+}

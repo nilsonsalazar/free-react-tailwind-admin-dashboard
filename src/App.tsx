@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import SignIn from "./pages/AuthPages/SignIn";
+import LoginPage from "./pages/AuthPages/LoginPage.jsx";
 import SignUp from "./pages/AuthPages/SignUp";
 import NotFound from "./pages/OtherPage/NotFound";
 import UserProfiles from "./pages/UserProfiles";
@@ -25,11 +26,13 @@ export default function App() {
       <Router>
         <ScrollToTop />
         <Routes>
+        <Route index path="/" element={<LoginPage />} />
           {/* Dashboard Layout */}
           <Route element={<AppLayout />}>
-            <Route index path="/" element={<Home />} />
+          
 
             {/* Others Page */}
+            <Route path="/dashboard" element={<Home />} />
             <Route path="/profile" element={<UserProfiles />} />
             <Route path="/calendar" element={<Calendar />} />
             <Route path="/blank" element={<Blank />} />
@@ -56,6 +59,7 @@ export default function App() {
           {/* Auth Layout */}
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<LoginPage />} />
 
           {/* Fallback Route */}
           <Route path="*" element={<NotFound />} />
